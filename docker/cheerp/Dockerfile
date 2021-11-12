@@ -56,7 +56,7 @@ RUN apt-get install -o APT::Immediate-Configure=false -f apt \
     && apt-get -f install \
     && dpkg --configure -a \
     && apt-get -y dist-upgrade \
-    && echo 2 | ./build/install-build-deps.sh \
+    && echo 3 | ./build/install-build-deps.sh \
     && rm -rf /build
 
 # ninja
